@@ -1,0 +1,406 @@
+<!-- ========= Metal Coil Products in Closed Railcars (PUBLIC-SAFE) ========= -->
+
+<!-- Preload hero image for faster LCP -->
+<link
+  rel="preload"
+  as="image"
+  href="https://www.cordstrap.com/globalassets/applications/rail_load_securement/closed_car/coiled_metal_products/coiled-metal-products-in-closed-railcars-aar-non-metallic-strapping.png"
+/>
+
+<style>
+  /* ======= Critical (above-the-fold) CSS ======= */
+
+  /* General padding and responsive container */
+  .restrainer.restrainer--pad { padding-left:16px !important; padding-right:16px !important; }
+  @media (min-width:37.5em) { .restrainer.restrainer--pad { padding-left:20px !important; padding-right:20px !important; } }
+  @media (min-width:64em) { .restrainer.restrainer--pad { padding-left:50px !important; padding-right:50px !important; } }
+
+  /* Adjust hero grid proportions */
+  @media (min-width:769px) {
+    .category-hero { grid-template-columns:1.25fr .85fr !important; gap:36px !important; }
+  }
+
+  /* Jumpbar layout (updated for spacing and wrapping) */
+  .jumpbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 16px;
+  }
+  .jump-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 18px;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1 1 auto;
+  }
+  @media (max-width:640px){
+    .jumpbar { flex-direction: column; align-items: flex-start; }
+    .cta { width: 100%; text-align: center; }
+  }
+
+  /* CTA button */
+  .cta {
+    display:inline-block;
+    padding:12px 20px;
+    border:1px solid #cfcfcf;
+    border-radius:8px;
+    background:#d62b2a;
+    color:#fff;
+    white-space:nowrap;
+    align-self:start;
+    justify-self:end;
+    text-align:center;
+    transition: transform .15s ease;
+  }
+  .cta:active{ transform: scale(.98); }
+
+  /* Figures and captions */
+  .hero-figure img{ display:block;max-width:100%; height:auto; border-radius:6px; }
+  .figure-cap { font-size:.9rem; color:#6b6b6b; margin-top:8px; }
+
+  /* Breadcrumbs in left column */
+  .breadcrumbs {
+    display:flex;
+    gap:8px;
+    list-style:none;
+    padding:0;
+    margin:0 0 12px 0;
+    font-size:.95rem;
+    color:#6b6b6b;
+  }
+  .breadcrumbs a { text-decoration:underline; }
+
+  /* Long content: render only when scrolled into view (perf) */
+  .long-content {
+    content-visibility: auto;
+    contain-intrinsic-size: 1000px 1px; /* reserve space to avoid layout shift */
+  }
+
+  /* ======= Deferred CSS (non-critical) ======= */
+</style>
+
+<!-- Defer non-critical styles (loads after first paint) -->
+<style media="print" onload="this.media='all'">
+  .chip{display:inline-block;padding:8px 12px;border:1px solid #e1e1e1;border-radius:999px;}
+  .section { scroll-margin-top:60px; }
+  .divider { height:1px; background:#efefef; margin:36px 0; }
+  .card { border:1px solid #e6e6e6; border-radius:10px; background:#fafafa; padding:18px; }
+  .kv { display:grid; grid-template-columns:1fr 1fr; gap:8px 18px; }
+  @media (max-width:640px){ .kv{ grid-template-columns:1fr; } }
+  .product-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  @media (max-width:860px){ .product-grid{ grid-template-columns:1fr; } }
+  .body-figure img{ max-width:560px; width:100%; height:auto; border-radius:6px; box-shadow:0 2px 10px rgba(0,0,0,.06); }
+  table.compare { width:100%; border-collapse:collapse; }
+  table.compare th, table.compare td { border:1px solid #e6e6e6; padding:10px; text-align:left; }
+  table.compare th { background:#f7f7f7; }
+</style>
+
+<!-- HERO (breadcrumbs stay in the left column) -->
+<section class="restrainer restrainer--pad" style="max-width:1280px;margin:0 auto 48px auto;padding-top:4px;">
+  <div class="category-hero" style="display:grid;grid-template-columns:1fr;gap:20px;align-items:start;">
+    <!-- LEFT COLUMN: breadcrumbs + text + jump links -->
+    <div>
+      <!-- Breadcrumb -->
+      <nav aria-label="Breadcrumb">
+        <ol class="breadcrumbs">
+          <li><a href="/en/applications/rail-load-securement/">Rail Load Securement</a></li>
+          <li aria-hidden="true">/</li>
+          <li><span aria-current="page" style="color:#222;">Coiled Metal Products in Closed Railcars</span></li>
+        </ol>
+      </nav>
+
+      <p style="margin:0 0 16px 0;line-height:1.65;">
+        Securing coiled steel and aluminum in boxcars demands proven methods that align with rail industry standards. Cordstrap is currently proposing a modern alternative to traditional <strong>4″ web assemblies</strong> with Class I railroads and the AAR to service &amp; support coil shippers.
+      </p>
+
+      <!-- Jump links + CTA (descriptive, accessible labels) -->
+      <div class="jumpbar">
+        <nav class="jump-links" aria-label="Page sections">
+          <a href="#why" style="text-decoration:underline;">Why this matters</a>
+          <a href="#advantages" style="text-decoration:underline;">Advantages for operations</a>
+          <a href="#products" style="text-decoration:underline;">Products overview</a>
+          <a href="#faq" style="text-decoration:underline;">FAQ (public)</a>
+        </nav>
+        <a href="#field-trials" class="cta">Sign Up for Immediate Trials</a>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN: image -->
+    <figure class="hero-figure" style="margin:0;text-align:center;">
+      <img
+        src="https://www.cordstrap.com/globalassets/applications/rail_load_securement/closed_car/coiled_metal_products/coiled-metal-products-in-closed-railcars-aar-non-metallic-strapping.png"
+        alt="Coiled metal products secured in closed railcars using Cordstrap AAR-approved non-metallic strapping"
+        width="720" height="720"
+        decoding="async"
+        loading="eager"h
+        fetchpriority="high">
+      <figcaption class="figure-cap">Coiled metal products secured in closed railcars with AAR-approved non-metallic strapping</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- BODY (large content gets content-visibility for perf) -->
+<section class="restrainer restrainer--pad long-content" style="max-width:720px;margin:0 auto;line-height:1.65;">
+
+  <!-- WHY -->
+  <div id="why" class="section"></div>
+  <h2>Why Coil Securement Matters</h2>
+  <p>
+    Boxcars in motion generate longitudinal, lateral, and vertical forces. Without proper securement, coils can shift, risking safety, cargo damage, and delays. Traditional bulkhead systems add weight and reduce payload. Modern approaches that combine web straps or non-metallic strapping with anti-slip mats provide a lighter, safer, and more efficient alternative to heavy blocking and bracing.
+  </p>
+
+  <div class="divider"></div>
+
+  <!-- ===== FIELD TRIALS SIGNUP (Metal Coils) ===== -->
+  <div id="field-trials" style="scroll-margin-top:60px;"></div>
+  <h2 style="margin:0 0 12px 0;">Sign Up for Immediate Field Trials</h2>
+  <p style="margin:0 0 16px 0;">Join Cordstrap’s closed-car field testing program with Class I railroads and the AAR.</p>
+
+  <div id="mc_embed_shell_field"
+       style="max-width:680px;margin:24px auto 40px auto;padding:26px 20px;background:#fff;border:1px solid #e6e6e6;border-radius:12px;">
+    <div id="mc_embed_signup_field">
+      <form action="https://cordstrap.us7.list-manage.com/subscribe/post-json?u=f38e34e7da10d79a0bf4358aa&id=e4fa1a3f22"
+            method="post" id="mc-embedded-subscribe-form-field" name="mc-embedded-subscribe-form-field"
+            class="validate mc-ajax" target="_self" novalidate style="margin:0;">
+        <div id="mc_embed_signup_scroll_field" aria-describedby="mc-required-hint-field">
+          <p id="mc-required-hint-field" style="margin:0 0 16px 0;color:#6b6b6b;font-size:.95em;">
+            <span class="asterisk">*</span> indicates required
+          </p>
+
+          <!-- Name -->
+          <div class="mc-field-group" style="margin-bottom:12px;">
+            <label for="mce-FNAME-field" style="display:block;margin-bottom:6px;">Name <span class="asterisk">*</span></label>
+            <input type="text" name="FNAME" id="mce-FNAME-field" required aria-required="true" autocomplete="name"
+                   style="width:100%;padding:12px;border:1px solid #cfcfcf;border-radius:8px;box-sizing:border-box;">
+          </div>
+
+          <!-- Company -->
+          <div class="mc-field-group" style="margin-bottom:12px;">
+            <label for="mce-MMERGE6-field" style="display:block;margin-bottom:6px;">Company Name <span class="asterisk">*</span></label>
+            <input type="text" name="MMERGE6" id="mce-MMERGE6-field" required aria-required="true" autocomplete="organization"
+                   style="width:100%;padding:12px;border:1px solid #cfcfcf;border-radius:8px;box-sizing:border-box%;">
+          </div>
+
+          <!-- Email -->
+          <div class="mc-field-group" style="margin-bottom:12px;">
+            <label for="mce-EMAIL-field" style="display:block;margin-bottom:6px;">Email Address <span class="asterisk">*</span></label>
+            <input type="email" name="EMAIL" id="mce-EMAIL-field" required aria-required="true" autocomplete="email"
+                   inputmode="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                   style="width:100%;padding:12px;border:1px solid #cfcfcf;border-radius:8px;box-sizing:border-box;">
+          </div>
+
+          <!-- Phone -->
+          <div class="mc-field-group" style="margin-bottom:12px;">
+            <label for="mce-PHONE-field" style="display:block;margin-bottom:6px;">Phone Number <span class="asterisk">*</span></label>
+            <input type="tel" name="PHONE" id="mce-PHONE-field" required aria-required="true" autocomplete="tel"
+                   inputmode="tel"
+                   pattern="^\+?\d[\d\s\-\(\)]{9,}$"
+                   title="Please enter a valid phone number with at least 10 digits (include country and area code if applicable)."
+                   style="width:100%;padding:12px;border:1px solid #cfcfcf;border-radius:8px;box-sizing:border-box;">
+          </div>
+
+          <!-- Hidden identifiers -->
+          <input type="hidden" name="tags" value="field_trial_coiled_metal">
+          <input type="hidden" name="MERGE5" value="https://www.cordstrap.com/en/applications/rail-load-securement/closed-cars/coiled-metal-products/">
+          <input type="hidden" name="MERGE10" value="Coiled Metal Products Field Trials">
+
+          <div class="clear" style="margin-top:10px;">
+            <input type="submit" name="subscribe" value="Sign Up for Field Trials"
+                   class="button"
+                   style="width:100%;padding:12px 18px;border-radius:8px;border:1px solid #cfcfcf;background:#d62b2a;color:#fff;cursor:pointer;">
+          </div>
+
+          <!-- Inline success/error status (aria-live already polite ✅) -->
+          <div id="mc-inline-status-field" role="status" aria-live="polite"
+               style="margin-top:12px;font-size:.95em;color:#2f7a2f;display:none;"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ADVANTAGES -->
+  <div id="advantages" class="section"></div>
+  <h2>Advantages of Modern Coil Securement</h2>
+  <ul style="margin:0 0 12px 22px;">
+    <li>Potential for higher usable payload vs. heavy bulkheads</li>
+    <li>Faster loading/unloading with ergonomic handling</li>
+    <li>No steel banding hazards; reduced surface abrasion</li>
+    <li>AAR-aligned components from approved suppliers</li>
+    <li>Field support, training, and program rollout assistance</li>
+  </ul>
+
+  <div class="divider"></div>
+
+  <!-- PRODUCTS -->
+  <div id="products" class="section"></div>
+  <h2>Products for Closed-Car Coil Programs</h2>
+
+  <div class="product-grid">
+    <div class="card">
+      <h3>4″ Web Strap Assemblies</h3>
+      <p>Holistic support for current coil loading methods using 4″ web assemblies. Assemblies are anchored to floor hardware and tensioned with ratchets; corner/edge protection is applied at coil contact points. We supply 4″ web assemblies today and support programs that plan to transition to alternative systems.</p>
+      <ul><li>Base and diagonal configurations (per published methods)</li><li>Compatible with coil edge protection</li><li>Fast to install and release for efficient turnarounds</li></ul>
+    </div>
+
+    <div class="card">
+      <h3>Grade 7 Non-Metallic Strapping</h3>
+      <p>Polyester cord strapping used as supplemental or encircling restraint where specified. Applied with approved buckles and tensioners; lightweight, flexible, and operator-friendly. Placement and configuration follow published practices; detailed engineering is shared within trials.</p>
+      <ul><li>Encircling / supplemental applications</li><li>Edge protection at coil contact points</li><li>Training and site implementation available</li></ul>
+    </div>
+
+    <div class="card">
+      <h3>Grade 8 Non-Metallic Strapping (Field Trials)</h3>
+      <p>Next-generation alternative now entering closed-car coil trials in collaboration with Class I railroads and the AAR. Designed as a high-strength option to simplify coil securement versus legacy harnesses—while maintaining compliance and safety objectives.</p>
+      <ul><li>Engineered as an alternative to 4″ web assemblies</li><li>Lightweight, easy handling in the field</li><li>Participation via immediate field trials</li></ul>
+      <p><a href="#field-trials" style="text-decoration:underline;">Sign up for field trials →</a></p>
+    </div>
+
+    <div class="card">
+      <h3>Anti-Slip Rubber Mats</h3>
+      <p>AAR-approved rubber friction mats positioned beneath coil skids or pallets to increase interface grip and help prevent sliding. Formats support coverage beyond pallet edges and doorway areas as appropriate. Durability enables use across multiple load cycles.</p>
+      <ul><li>AAR-approved manufacturers</li><li>Integrates with pallet/skid systems</li><li>Supports modern strapping approaches</li></ul>
+    </div>
+
+    <div class="card">
+      <h3>Edge &amp; Corner Protection</h3>
+      <p>Protects strap/webbing at coil contact points and maintains system performance. Options include CEP2, CEP16, edgeboards, and flexboards.</p>
+      <ul><li>Reduces abrasion and point loading</li><li>Supports compliance and longevity</li><li>Fits a variety of coil diameters and skids</li></ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- BEST PRACTICES -->
+  <div id="best-practices" class="section"></div>
+  <h2>Coil Loading Best Practices </h2>
+  <ol style="margin:0 0 12px 22px;">
+    <li>Inspect the boxcar for sound floors, anchors, and watertight seals.</li>
+    <li>Place anti-slip rubber mats beneath coil skids/pallets to increase grip.</li>
+    <li>Apply web straps or non-metallic straps per the chosen method and specification.</li>
+    <li>Use edge protection wherever straps contact coil edges.</li>
+    <li>Balance loads, fill appropriate voids, and verify restraint before release.</li>
+    <li>Use doorway retention options where receiver opening safety is a concern.</li>
+  </ol>
+
+  <div class="divider"></div>
+
+  <!-- FAQ (only once) -->
+  <div id="faq" class="section"></div>
+  <h2>Frequently Asked Questions</h2>
+  <ol style="list-style:none;padding:0;margin:0;counter-reset:faq;">
+    <li style="margin:18px 0 16px 0;">
+      <h3 style="counter-increment:faq;position:relative;padding-left:44px;"><span style="position:absolute;left:0;top:0;width:32px;height:32px;border-radius:999px;border:1px solid #e1e1e1;display:inline-grid;place-items:center;font-size:.9rem;color:#d62b2a;">1</span> Do you still supply 4″ web assemblies?</h3>
+      <div style="border-left:3px solid #f0d6d6;padding:10px 12px;background:#fff7f7;border-radius:6px;"><p>Yes. We supply certified 4″ web assemblies and support mixed-fleet programs. In parallel, we’re collaborating with Class I railroads and the AAR on alternative pathways for closed-car coil securement.</p></div>
+    </li>
+
+    <li style="margin:18px 0 16px 0;">
+      <h3 style="counter-increment:faq;position:relative;padding-left:44px;"><span style="position:absolute;left:0;top:0;width:32px;height:32px;border-radius:999px;border:1px solid #e1e1e1;display:inline-grid;place-items:center;font-size:.9rem;color:#d62b2a;">2</span> Are anti-slip mats required?</h3>
+      <div style="border-left:3px solid #f0d6d6;padding:10px 12px;background:#fff7f7;border-radius:6px;"><p>AAR-approved anti-slip rubber mats are widely used in closed-car coil programs to improve interface grip and reduce shifting risk. Specific usage depends on the method and car conditions.</p></div>
+    </li>
+
+    <li style="margin:18px 0 16px 0;">
+      <h3 style="counter-increment:faq;position:relative;padding-left:44px;"><span style="position:absolute;left:0;top:0;width:32px;height:32px;border-radius:999px;border:1px solid #e1e1e1;display:inline-grid;place-items:center;font-size:.9rem;color:#d62b2a;">3</span> What’s the difference between Grade 7/8 and web assemblies?</h3>
+      <div style="border-left:3px solid #f0d6d6;padding:10px 12px;background:#fff7f7;border-radius:6px;"><p>Grade 7/8 are non-metallic cord strapping solutions used in defined applications and field trials. Web assemblies are 4″ wide systems with ratchets and anchor hardware used in established methods. We support both, depending on your program.</p></div>
+    </li>
+
+    <li style="margin:18px 0 16px 0;">
+      <h3 style="counter-increment:faq;position:relative;padding-left:44px;"><span style="position:absolute;left:0;top:0;width:32px;height:32px;border-radius:999px;border:1px solid #e1e1e1;display:inline-grid;place-items:center;font-size:.9rem;color:#d62b2a;">4</span> Will you share calculations and test data?</h3>
+      <div style="border-left:3px solid #f0d6d6;padding:10px 12px;background:#fff7f7;border-radius:6px;"><p>Detailed engineering, calculations, and test data are provided within approved field trials and AAR review—not on this public page.</p></div>
+    </li>
+  </ol>
+
+  <div class="divider" role="presentation"></div>
+
+  <!-- ===== Mailchimp AJAX (Unified for Field Trials + Quote) ===== -->
+  <script>
+  (function () {
+    function serialize(form) {
+      var pairs = [];
+      var fields = form.querySelectorAll('input, select, textarea');
+      for (var i = 0; i < fields.length; i++) {
+        var el = fields[i];
+        if (!el.name) continue;
+        if ((el.type === 'checkbox' || el.type === 'radio') && !el.checked) continue;
+        pairs.push(encodeURIComponent(el.name) + '=' + encodeURIComponent(el.value));
+      }
+      return pairs.join('&');
+    }
+
+    function wire(form) {
+      // Ensure a unique status div
+      var status = form.querySelector('[id^="mc-inline-status"]');
+      if (!status) {
+        status = document.createElement('div');
+        status.id = 'mc-inline-status-' + Math.random().toString(36).slice(2);
+        status.setAttribute('role', 'status');
+        status.setAttribute('aria-live', 'polite'); /* accessibility: inline updates */
+        status.style.cssText = 'margin-top:12px;font-size:.95em;color:#2f7a2f;display:none;';
+        form.appendChild(status);
+      }
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        var email = form.querySelector('input[type="email"]');
+        var phone = form.querySelector('input[type="tel"]');
+        var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        var phonePattern = /^\+?\d[\d\s\-\(\)]{9,}$/;
+
+        if (!emailPattern.test(email.value.trim())) {
+          status.style.display = 'block';
+          status.style.color = '#b00020';
+          status.textContent = 'Please enter a valid email address.';
+          email.focus();
+          return;
+        }
+
+        if (!phonePattern.test(phone.value.trim())) {
+          status.style.display = 'block';
+          status.style.color = '#b00020';
+          status.textContent = 'Please enter a valid phone number with at least 10 digits.';
+          phone.focus();
+          return;
+        }
+
+        var base = form.action;
+        var qs = serialize(form);
+        var callbackName = 'mc_callback_' + Date.now() + '_' + Math.random().toString(36).slice(2);
+        var url = base + (base.indexOf('?') > -1 ? '&' : '?') + qs + '&c=' + callbackName;
+
+        status.style.display = 'block';
+        status.style.color = '#585858';
+        status.textContent = 'Submitting…';
+
+        var script = document.createElement('script');
+        window[callbackName] = function (data) {
+          delete window[callbackName];
+          script.remove();
+          if (data.result === 'success') {
+            status.style.color = '#2f7a2f';
+            status.innerHTML = '✅ Thank you! We’ll be in touch shortly.';
+            form.reset();
+          } else {
+            status.style.color = '#b00020';
+            status.innerHTML =
+              (data.msg && data.msg.replace(/<\/?[^>]+(>|$)/g, '')) ||
+              '❌ Sorry, something went wrong. Please try again.';
+          }
+        };
+        script.src = url;
+        document.body.appendChild(script);
+      });
+    }
+
+    var forms = document.querySelectorAll('form.mc-ajax');
+    for (var i = 0; i < forms.length; i++) {
+      wire(forms[i]);
+    }
+  })();
+  </script>
+  <!-- ========= /end ========= -->
